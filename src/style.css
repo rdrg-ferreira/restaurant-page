@@ -1,0 +1,89 @@
+:root {
+    --header-height: 20%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 10px;
+    background-color: beige;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+header {
+    height: var(--header-height);
+}
+
+header > .wrapper {
+    background-color: rgb(128, 71, 71);
+    text-align: center;
+    height: 100%;
+    padding-top: 5%;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.4);
+}
+
+header > .wrapper > a {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header > nav {
+    width: 20%;
+    height: 20%;
+    top: 87%;
+    left: 40%;
+    gap: 8px;
+}
+
+header > nav > * {
+    flex: 1;
+}
+
+#content {
+    margin-top: 10%;
+    align-items: center;
+    height: 100%;
+}
+
+#content > #map {
+    margin-top: 5%;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
