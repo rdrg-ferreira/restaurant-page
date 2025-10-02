@@ -1,5 +1,3 @@
-import mapImage from "./map_location.png";
-
 export function addHomeContent() {
     const contentHolder = document.querySelector("#content");
 
@@ -9,11 +7,6 @@ export function addHomeContent() {
     const par = document.createElement("p");
     par.textContent = "Come visit us!";
 
-    const img = document.createElement("img");
-    img.src = mapImage;
-    img.id = "map";
-
     contentHolder.appendChild(heading2);
     contentHolder.appendChild(par);
-    contentHolder.appendChild(img);
 };
